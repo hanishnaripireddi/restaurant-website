@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* section-1 */
+
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.section-1-heading{
+    font-size: 12rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: .5;
+    text-shadow: .3rem .3rem .3rem #000;
+}
+
+.section-1-icons i{
+    font-size: 20rem;
+    color: blanchedalmond;
+    position: absolute;
+    transform: translate(-50%,-50%) scale(0);
+    text-shadow: .2rem .2rem .2rem #000;
+    transition: transform 0.3s;
+    transition: transform 1s;box-shadow: 0.5s;
+}
+
+.section-1-icons:hover{
+    transform: translateY(-1rem)translatex(1rem);
+    box-shadow: 1rem 1rem 1rem #000;
+}
+.section-1-icons i.change{
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 0.3s 0.3s;
+}
+/* section-1 end */
+/* section-2 */
+.section-2{
+    width: 100%;
+    height: 100vh;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10rem 0;
+}
+
+.card img{
+    width: 200px;
+    height: 150px;
+    padding: 3px;
+    padding-top: 3px;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    align-content: center;
+    width: 30rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1rem 1rem 1rem;
+    background-color: bisque;
+    position: relative;
+    transition: transform 0.5s;box-shadow: 0.5s;
+}
+
+.card:hover{
+    transform: translateY(-1rem)translateX(-0.5rem);
+    box-shadow: 2rem 2rem 2rem #000;
+
+
+}
+/* .card::before{
+    content: "";
+    height: 100%;
+    
+    background-color: rgb(241, 225, 210);
+    position: absolute;
+    top: 0;
+    left: -1rem;
+} */
+.card-name{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #000;
+    margin: 2rem 0;
+    text-shadow: .15rem .15rem .15rem;
+}
+
+.card-btn{
+    width: 70%;
+    background-color: #000;
+    color: bisque;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    padding: .5rem 0;
+    cursor: pointer;
+    box-shadow: .2rem .2rem .2rem #000;
+
+}
+
+/* section-3 */
+
+.section-3{
+    background-color: #eecdaa;
+    padding: 5rem 0;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10rem;
+}
+
+.gallery-link{
+    position: relative;
+    margin: 4rem 1rem;
+}
+
+/* .gallery-link::before{
+    content: "";
+    position: absolute;
+    top: 2vh;
+    left: 80%;
+    width: 0.2rem;
+    height: 0;
+    background-color: white;
+    transition: height .5s;
+} */
+
+/* .gallery-link:hover::before{
+    height: 80%;
+    
+} */
+.gallery-link::after{
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 2rem;
+    width: 0%;
+    height: 0.2rem;
+    background-color: white;
+    transition: width 0.5s;
+}
+.gallery-link:hover::after{
+    width: 80%;
+}
+.food-img{
+    width: 35vh;
+    height: 35vh;
+    object-fit: cover;
+    box-shadow: .1rem .1rem .1rem 0 #000,.1rem .1rem .1rem 0 rgb(36, 34, 34),.1rem .1rem .1rem 0 rgb(126, 94, 94),.5rem .5rem .5rem 0 rgb(10, 10, 10);
+    transition: transform 0.5s;box-shadow: 0.5s;
+}
+
+.food-img:hover{
+    transform: translateY(-1rem)translateX(-0.5rem);
+    box-shadow: 2rem 2rem 2rem #000;
+    filter: blur(0.5s);
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+.food-name{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    font: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: azure;
+    width: 0;
+    overflow: hidden;
+
+}
+
+.gallery-link:hover .food-name{
+    width: 100%;
+    transition: width 1.5s .5s;
+}
+.food-description{
+    position: absolute;
+    bottom: 4vh;
+    padding-right: 5px;
+    align-items: center;
+    left: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+.gallery-link:hover .food-description{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s 1s;
+}
+
+/* footer */
+
+.section-4{
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+    background-color: #A27B5C;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2.5rem 0;
+}
+
+.copyright{
+    bottom: 1rem;
+    color: white;
+}
+.section-4-heading{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #DFBB9D;
+    cursor: default;
+}
+
+.section-4-paragragh{
+   font-size: 1.5rem; 
+   color: white;
+}
+
+.signup-form-input{
+    width: 40rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #A27B5C;
+    text-align: center;
+    letter-spacing: 0.1rem;
+
+}
+
+.signup-form-input::placeholder{
+    color: #A27B5C;
+    font-size: 1.6rem;
+}
+
+.signup-form button{
+    position: relative;
+    left: -4.5rem;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #A27B5C;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+
+.feedback{
+    position: fixed;
+    right: 1rem;
+    bottom: 0.1rem;
+}
+
+.feedback-img{
+    width: 7rem;
+}
+
+/* navbar */
+.navbar{
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    background-color: #ffffff;
+    opacity: 0.5;
+    top: 0rem;
+    z-index: 100;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 6rem;
+    box-shadow: .3rem .3rem 0.3rem #000;
+}
+
+.navbar-link{
+    color: #000;
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    transition: transform 1s,color 0.5s;
+}
+
+.navbar-link:hover{
+    color:#A27B5C;
+    font-weight: 700;
+    transform: scale(1.3);
+}
+
+
+
+
+/* responsive */
+@media(max-width:1400px){
+    html{
+        font-size: 50%;
+    }
+    .section-2{
+        height: auto;
+        padding: 10rem 0 12rem 0;
+    }
+    .cards-container{
+        margin-top: 10rem;
+        /* flex-direction: column;
+        align-items: center; */
+    }
+    .gallery-link{
+        width: 40rem;
+        height: 40rem;
+    }
+}
+
+@media(max-width:760px){
+    .cards-container{
+        margin-top: 10rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        padding-top: 10rem;
+    }
+    .navbar{
+        column-gap: 2rem;
+    }
+}
